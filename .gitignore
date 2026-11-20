@@ -1,0 +1,17 @@
+node_modules
+client/dist
+server/data/db.json
+
+.env
+client/.env
+server/.env
+server/data/db.json
+client/public/uploads/*
+!client/public/uploads/.gitkeep
+client/dist
+android
+
+server/auth_patch.tmp
+*.tmp
+node_modules/
+.DS_Store

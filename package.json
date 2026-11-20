@@ -1,0 +1,25 @@
+{
+  "name": "rescroll",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ReScroll - prototipe aplikasi intervensi perilaku digital berbasis gamifikasi",
+  "scripts": {
+    "setup": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "concurrently -k -n API,WEB -c yellow,cyan \"npm:dev:server\" \"npm:dev:client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm run build && npm start --prefix server",
+    "android:sync": "npx cap sync android",
+    "android:open": "npx cap open android",
+    "android:add": "npx cap add android"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "@capacitor/cli": "^6.2.0"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/android": "^6.2.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "appId": "id.rescroll.app",
+  "appName": "ReScroll",
+  "webDir": "client/dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}
